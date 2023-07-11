@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, rgba(234, 213, 247,1) 40%, rgb(234, 213, 247) 80%);
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Выберите желаемую высоту линии */
+  background: linear-gradient(90deg, rgba(234, 213, 247, 1) 40%, rgba(234, 213, 247, 0) 80%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Добавьте желаемую тень */
+  z-index: 1;
+}
+
+header img {
+
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+h1 a {
+  text-decoration: none;
+  color: #b540bd;
+}
+
+.main {
+  width: 100%;
+  min-height: calc(100vh - 230px);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(201,148,233,1) 100%);
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #b540bd;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 33px;
+}
+
+.icon {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f6eaf6;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding:  16px 50px;
+  background: #cc68db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul {
+  word-wrap: break-word;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 15px 30px 12px 50px;
+  user-select: none;
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url(./images/free-icon-loading-6356478.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 8px;
+  position: absolute;
+  background-image: url(./images/free-icon-check-mark-1443000.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #f4eaf3;
+}
+
+.footer {
+  background: linear-gradient(90deg, rgba(234, 213, 247,1) 40%, rgb(234, 213, 247) 80%);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer h2 {
+  color: #b540bd;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-links img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin: 0 10px;
+}
+
+.icon-links a:hover img {
+  opacity: 1;
+}
+
+.icon-links img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: url(./images/free-icon-love-7589077.png) center/cover no-repeat;
+}
+

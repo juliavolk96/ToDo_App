@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>To-Do List</title>
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="https://www.linkedin.com/in/julia-volkova-1460a7259/" class="mypage"><img src="./images/free-icon-linkedin-1400486.png" alt="My page"></a>
+    </h1>
+  </header>
+  <main class="main">
+    <div class="todo-app">
+      <h2>To-Do List <img src="./images/free-icon-to-do-list-9099180.png" class="icon" alt="icon"></h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text" onkeypress="handleKeyPress(event)">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <h2>Thank you for icons!</h2>
+    <div class="icon-links">
+      <a href="https://www.flaticon.com/ru/free-icon/to-do-list_9099180?term=%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B4%D0%B5%D0%BB&page=1&position=53&origin=search&related_id=9099180" title="список дел иконки"><img src="./images/free-icon-love-7589077.png" alt="icon"></a>
+      <a href="https://www.flaticon.com/ru/free-icon/loading_6356478" title="формы и символы иконки"><img src="./images/free-icon-love-7589077.png" alt="icon"></a>
+      <a href="https://www.flaticon.com/ru/free-icon/check-mark_1443000" title="круг иконки"><img src="./images/free-icon-love-7589077.png" alt="icon"></a>
+      <a href="https://www.flaticon.com/ru/free-icon/linkedin_1400486?term=linkedin&page=1&position=6&origin=search&related_id=1400486" title="linkedin иконки"><img src="./images/free-icon-love-7589077.png" alt="icon"></a>
+      <a href="https://www.flaticon.com/ru/free-icon/love_7589077" title="сердце иконки"><img src="./images/free-icon-love-7589077.png" alt="icon"></a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
